@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Contacto - Barberia Vega</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="caja">
+                 <h1>
+                   <img id="logo" src="productos/logo.png" alt="Logo de la barberia Vega">  
+                  </h1>
+                  <nav>
+                       <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="productos.html">Productos</a></li>
+                            <li><a href="contacto.html">Contacto</a></li>
+                        </ul>
+                   </nav>
+             </div>
+        </header>
+        <main>
+            <form>
+                <label for="NombreyApellido">Nombre y Apellido</label>
+                <input type="text" id="NombreyApellido" class="Input-padron" required>
+
+                <label for="CorreoElectronico">Correo Electronico</label>
+                <input type="email" id="CorreoElectronico" class="Input-padron" required
+                placeholder="email@dominio.com">
+
+                <label for="Telefono">Telefono</label>
+                <input type="tel" id="Telefono" class="Input-padron" required
+                placeholder="(XX)XXXX-XXXXX">
+
+                <label for="mensaje">Mensaje</label>
+                <textarea cols="70" rows="10" id="mensaje" class="input-padron"> </textarea>
+
+                <fieldset>
+                    <legend>Como le gustaria que lo contactemos</legend>
+
+                    <label for="radio-email"> <input type="radio" name="contacto" 
+                     value="email" id="radio-email">Email</label>
+                   
+    
+                    <label for="radio-Telefono"><input type="radio" name="contacto"
+                     value="Telefono" id="radio-telefono">Telefono</label>
+                    
+    
+                    <label for="radio-whatsapp"><input type="radio" name="contacto" 
+                     value="Whatsapp" id="radio-Watsapp" checked>Whatsapp</label>
+                    
+                    
+                </fieldset>
+
+                <fieldset>
+                    <legend>¿Cual horario prefiere ser atendido?</legend>
+                    <select>
+                        <option>Mañana</option>
+                        <option>Tarde</option>
+                        <option>Noche</option>
+                    </select>
+                </fieldset>
+
+
+                <label class="Checkbox">
+                <input  type="checkbox" checked>Le gustaria recibir novedades de la Barberia Vega?
+                </label>
+                
+                
+
+                <input type="Submit" value="Enviar Formulario" class="enviar">
+                
+            </form>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dias</th>
+                        <th>Horario</th>
+                    </tr>
+                </thead>
+                <body>
+                    <tr>
+                        <td> Martes a Sabado </td>
+                        <td> 09hs - 20hs </td>
+                    </tr>    
+                </body>               
+                
+            </table>
+        </main>
+        <footer>
+            <img src="productos/545454.png" alt="logo de la barberia Vega">
+            <p class="copyright">&copy Copyright Barberia Vega 2022</p>
+        </footer>
+    </body>
+
+</html>

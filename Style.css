@@ -1,0 +1,298 @@
+body
+{
+  font-family: 'Bodoni Moda', serif;
+}
+
+header{
+  background-color: #9c9c9ce4;
+  padding-left: 400px 400px;
+}
+.caja
+{
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+nav
+{
+    position: absolute;
+    top: 100px;
+    right: 0;
+}
+#logo
+{
+    width: 20%;
+    border:0px;
+}
+nav li
+{
+  display: inline;
+  margin: 0 0 0 15px;
+}
+nav a
+{
+text-transform: uppercase;
+color: black;
+font-weight: bold;
+font-size: 22px;
+text-decoration: none;
+}
+
+nav a:hover{
+  color: #3b3b3be4;
+  text-decoration: underline;
+  font-size: 40px;
+}
+
+.productos
+{
+width: 940px;
+margin: 0 auto;
+padding: 50px;
+}
+
+.productos li
+{
+display: inline-block;
+text-align: center;
+width: 30%;
+vertical-align: top;
+margin: 0 1.5%;
+padding: 30px 20px;
+box-sizing: border-box;
+border-color: black;
+border-width: 2px;
+border: 2px solid #000000;
+border-radius: 10px;
+}
+
+.productos li:hover{
+  border-color: #251111e4;
+  margin-block: 5px;
+  border-width: 5px;
+
+}
+
+.productos li:active{
+  border-color: rgb(61, 61, 61);
+}
+.productos h2
+{
+font-size:  30px;
+font-weight: bold;
+}
+
+.productos li:hover h2{
+  font-size: 30px;
+}
+
+.productoDescripcion
+{
+  font-size: 18px;
+  margin-top: 20px;
+}
+.productoPrecio
+{
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+footer{
+  text-align: center;
+  background: #545454;
+  padding: 40px;
+}
+.copyright{
+  color: #FFFFFF;
+  font-size: 13px;
+}
+
+form
+{
+  margin: 40px 0;
+}
+
+form label, form legend
+{
+display: block;
+font-size: 20px;
+margin: 0 0 10px;
+}
+
+.Input-padron 
+{
+  display:  block;
+  padding: 10px 25px;
+  margin: 0 0 20px;
+  width: 50%;
+}
+
+.Checkbox
+{
+  margin: 20px 0;
+}
+
+.enviar
+{
+width: 40%;
+padding: 15px 0;
+font-size: 18px;
+font-weight: bold;
+color: white;
+background: orange;
+border: none;
+border-radius: 7px;
+transition: 2s all;
+cursor: pointer;
+}
+.enviar:hover
+{
+  background: darkred;
+  transform: scale(1.2);
+}
+table
+{
+margin: 40px 40px;
+}
+thead
+{
+  background: #555555;
+  color: white;
+  font-weight: bold;
+}
+td, th
+{
+  border: 1px solid #000000;
+  padding: 8px 15px;
+  font-weight: bold;
+}
+/*aqui ihniciaCSS PARA NUESTRA HOME*/
+.banner
+{
+width: 100%;
+}
+.principal
+{
+  padding: 3em 0;
+  background: #fefefe;
+  width: 940px;
+  margin: 0 auto;
+}
+.TituloPrincipal
+{
+  text-align: center;
+  font-size: 2em;
+  margin: 0 0 1em;
+  clear: left;
+}
+.TituloPrincipal::first-letter
+{
+  font-weight: bold;
+}
+
+p:first-line
+{
+font-style: italic;
+}
+.principal p
+{
+  font-size: 1.2em;
+ margin:  0 0 1em;
+}
+.principal strong
+{
+  font-weight: bold;
+}
+.principal em
+{
+  font-style: italic;
+}
+
+.utensillos
+{
+  width: 120px;
+  float: left;
+  margin: 0 20px 20px 0;
+
+}
+.mapa
+{
+  padding: 3em 0;
+  background: linear-gradient(#fefefe 50%, #888888);
+}
+.mapa p
+{
+ margin: 0 0 2em;
+ text-align: center;
+}
+.mapacontenido
+{
+  width: 940px;
+  margin: 0 auto;
+}
+.Diferenciales
+{
+  padding: 3em 0;
+  background: #888888;
+  
+}
+
+.contenidodiferenciales
+{
+  width: 640px;
+  margin: 0 auto;
+}
+.listadiferenciales
+{
+  width: 40%;
+  display: inline-block;
+  vertical-align: top;
+}
+.items
+{
+  line-height: 1.5;
+}
+
+.items::before
+{
+  content: "✂";
+}
+.items:first-child
+{
+  font-weight: bold;
+}
+
+.imagenDiferencial
+{
+  width: 60%;
+  transition: 500ms;
+  box-shadow: 10px 10px 25px  15px #000000;
+}
+
+.imagenDiferencial:hover
+{
+  opacity: 43%;
+}
+
+.video
+{
+  width: 680px;
+  margin: 10em auto;
+  
+}
+
+@media screen and (max-width:480px){
+  h1{
+    text-align: center;
+  }
+  nav{
+    position: static;
+  }
+  .caja, .principal, .mapacontenido, .contenidodiferenciales, .video{
+    width: auto;
+  }
+  .listadiferenciales, .imagenDiferencial{
+    width: 100%;
+  }
+
+}
